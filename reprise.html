@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Reprise de votre véhicule - Chasseurs d'autos</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -15,11 +15,11 @@
         <img src="./assets/images/chasseurs-dautos-logo.png" alt="Chasseurs d'autos" class="logo">
         <nav>
           <ul>
-            <li><a href="">Estimation</a></li>
-            <li><a href="">Fonctionnement</a></li>
-            <li><a href="">Qui sommes-nous ?</a></li>
-            <li><a href="">Catalogue</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#estimation">Estimation</a></li>
+            <li><a href="#fonctionnement">Fonctionnement</a></li>
+            <li><a href="#qui-sommes-nous">Qui sommes-nous ?</a></li>
+            <li><a href="#catalogue">Catalogue</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
     </div>
@@ -36,21 +36,75 @@
     <section class="estimation">
       <div class="container row row-formulaire">
         <div class="column">
-          <h1>Changez de voiture sans tracas avec <strong>Chasseurs d'autos</strong>&nbsp;:</h1>
+          <h1>Changez de voiture sans tracas avec <strong class="with-primary-underline">Chasseurs d'autos</strong>&nbsp;:</h1>
           <p>le spécialiste pour obtenir <strong>le meilleur prix</strong> rapidement et facilement.</p>
         </div>
         <div class="column">
-          <article class="formulaire-estimation"></article>
+          <article class="estimation-form" id="estimation">
+            <h2>Estimez la reprise de votre véhicule&nbsp;:</h2>
+            <form action="">
+              <div class="form-group">
+                <input type="text" name="marque" placeholder="Marque" required>
+                <input type="text" name="modele" placeholder="Modèle" required>
+                <input type="text" name="kilometrage" placeholder="Kilométrage" required>
+                <input type="text" name="immatriculation" placeholder="Immatriculation" required>
+              </div>
+              <div class="form-group">
+                <input type="text" name="nom" placeholder="Nom" required>
+                <input type="text" name="prenom" placeholder="Prénom" required>
+                <input type="text" name="telephone" placeholder="Téléphone" required>
+                <input type="text" name="ville" placeholder="Ville" required>
+                <input type="email" name="email" placeholder="Email" autocomplete="email" class="fullwidth" required>
+              </div>
+              <input type="submit" value="Vendre ma vieille voiture" class="button button-secondary">
+            </form>
+          </article>
         </div>
       </div>
 
-      <div class="container processus">
+      <div class="container processus" id="fonctionnement">
         <h2>Un processus simple et rapide</h2>
-        <div class="schema-processus"></div>
+        <div class="schema-processus">
+          <div class="schema-step schema-step-1">
+            <img src="./assets/icons/chasseurs-dautos-icon-step-1.png" alt="">
+            <div class="schema-step-content">
+              <img src="./assets/icons/icon-step-1.svg" alt="Étape 1">
+              <p><strong>Remplir<br> le formulaire<br> de contact</strong></p>
+            </div>
+          </div>
+          <div class="schema-step">
+            <img src="./assets/icons/chasseurs-dautos-icon-step-2.png" alt="">
+            <div class="schema-step-content">
+              <img src="./assets/icons/icon-step-2.svg" alt="Étape 2">
+              <p>Un expert<br> Chasseurs d’Autos<br> me contacte</p>
+            </div>
+          </div>
+          <div class="schema-step">
+            <img src="./assets/icons/chasseurs-dautos-icon-step-3.png" alt="">
+            <div class="schema-step-content">
+              <img src="./assets/icons/icon-step-3.svg" alt="Étape 3">
+              <p>Je transmets<br> les éléments<br> complémentaires</p>
+            </div>
+          </div>
+          <div class="schema-step">
+            <img src="./assets/icons/chasseurs-dautos-icon-step-4.png" alt="">
+            <div class="schema-step-content">
+              <img src="./assets/icons/icon-step-4.svg" alt="Étape 4">
+              <p>L’expert Chasseurs<br> d’Autos fait une<br> analyse complète</p>
+            </div>
+          </div>
+          <div class="schema-step schema-step-5">
+            <img src="./assets/icons/chasseurs-dautos-icon-step-5.png" alt="">
+            <div class="schema-step-content">
+              <img src="./assets/icons/icon-step-5.svg" alt="Étape 5">
+              <p>Je reçois<br> la meilleure offre<br> de reprise</p>
+            </div>
+          </div>
+        </div>
         <a href="#" class="button">Estimer mon véhicule</a>
       </div>
 
-      <div class="container row row-about">
+      <div class="container row row-about" id="qui-sommes-nous">
         <div class="column">
           <p class="feature-text">
             <strong>Chasseurs d’Autos</strong> est un réseau d’indépendants en intermédiation de <strong>vente de véhicules</strong> adossé à des professionnels de l’automobile.
@@ -68,30 +122,94 @@
             <li>Gestion des acheteurs</li>
             <li>Sécurisation du paiement</li>
           </ul>
-          <p class="feature-text-color">Nous nous occupons<br> <strong>de tout, pour vous !</strong></p>
+          <p class="feature-text-color">Nous nous occupons<br> <strong class="with-secondary-underline">de tout, pour vous !</strong></p>
         </div>
       </div>
     </section>
-    <section class="reprises">
+    <section class="reprises" id="catalogue">
       <div class="container">
         <h2>Les meilleurs reprises,<br> <strong>du marché !</strong></h2>
         <p>Découvrez notre vaste sélection de reprises offrant les meilleurs prix du marché. Bénéficiez de notre expertise pour obtenir la valeur optimale pour votre voiture.</p>
+        <div class="catalog">
+          <div class="card">
+            <img src="./assets/images/chasseurs-dautos-annonce-1.png" alt="">
+            <div class="card-content">
+              <h3>Volkswagen Golf Sportsvan</h3>
+              <p class="card-description">Golf Sportsvan 1.6 TDI 110 FAP BlueMotion Technology Trendline DSG7</p>
+              <div class="card-prices">
+                <p class="price">12 690€</p>
+                <p class="price-per-month">360€/mois</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/images/chasseurs-dautos-annonce-2.jpg" alt="">
+            <div class="card-content">
+              <h3>Mercedes Benz GLA</h3>
+              <p class="card-description">GLA 220 d 8G-DCT 4Matic AMG Line</p>
+              <div class="card-prices">
+                <p class="price">39 900€</p>
+                <p class="price-per-month">599€/mois</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/images/chasseurs-dautos-annonce-3.jpg" alt="">
+            <div class="card-content">
+              <h3>Volkswagen Golf Sportsvan</h3>
+              <p class="card-description">Golf Sportsvan 1.6 TDI 110 FAP BlueMotion Technology Trendline DSG7</p>
+              <div class="card-prices">
+                <p class="price">20 390€</p>
+                <p class="price-per-month">460€/mois</p>
+              </div>
+            </div>
+          </div>
+        </div>
         <a href="#" class="button">Découvrir le catalogue complet</a>
       </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="contact-image-container">
         <img src="./assets/images/chasseurs-dautos-contact-bucheron.png" alt="">
       </div>
       <div class="contact-form-container">
         <h2>Et si on discutait<br> de votre projet ?</h2>
         <p>Notre équipe est à votre disposition pour répondre à vos besoins et vous guider tout au long de votre démarche.</p>
-        <p class="feature-text-color">Nous sommes là pour <strong>vous accompagner !</strong></p>
+        <p class="feature-text-color">Nous sommes là pour <strong class="with-secondary-underline">vous accompagner !</strong></p>
+        <article class="contact-form">
+          <form action="">
+            <div class="form-group">
+              <input type="text" name="nom" placeholder="Nom*" required>
+              <input type="text" name="prenom" placeholder="Prénom*" required>
+              <input type="text" name="telephone" placeholder="Téléphone*" required>
+              <input type="email" name="email" placeholder="Adresse email*" autocomplete="email" required>
+            </div>
+            <div class="conditions">
+              <p>Les champs marqués d’un * sont obligatoires.</p>
+              <label for="contact-conditions">
+                <input type="checkbox" name="conditions" id="contact-conditions">
+                J'accepte les conditions générales et la politique de confidentialité.
+              </label>
+            </div>
+            <input type="submit" value="Échanger avec un conseiller" class="button button-secondary">
+          </form>
+        </article>
       </div>
     </section>
   </main>
   <footer>
-    <img src="./assets/images/chasseurs-dautos-logo.png" alt="Chasseurs d'autos" class="logo">
+    <div class="footer-container">
+      <img src="./assets/images/chasseurs-dautos-logo-blanc.png" alt="Chasseurs d'autos" class="logo">
+
+      <nav>
+        <ul>
+          <li><a href="https://chasseursdautos.com/" target="_blank">Site internet</a></li>
+          <li><a href="https://www.facebook.com/people/Chasseurs-dAutos/61551448784446/" target="_blank">Facebook</a></li>
+          <li><a href="https://chasseursdautos.com/mentions-legales" target="_blank">Mentions légales</a></li>
+          <li><a href="https://chasseursdautos.com/conditions-generales-vente" target="_blank">Conditions générales</a></li>
+        </ul>
+      </nav>
+    </div>
   </footer>
 </body>
 </html>
