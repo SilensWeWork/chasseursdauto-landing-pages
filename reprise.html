@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
   <title>Reprise de votre véhicule - Chasseurs d'autos</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,19 +44,30 @@
         <div class="column">
           <article class="estimation-form" id="estimation">
             <h2>Estimez la reprise de votre véhicule&nbsp;:</h2>
-            <form action="">
+            <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D680000029HFM" method="POST">
+              <input type=hidden name="oid" value="00D680000029HFM">
+              <input type=hidden name="retURL" value="https://vente.chasseursdautos.com/">
+              <input id="00NTG000000IZNV" name="00NTG000000IZNV" type="hidden" value="1">
+              <input id="00NTG000000IZSL" name="00NTG000000IZSL" type="hidden" value="1">
+
+              <!-- field debug -->
+              <input type="hidden" name="debug" value=1>
+              <input type="hidden" name="debugEmail" value="benjamin@alena-dx.com">
+              <!-- end field debug -->
+
               <div class="form-group">
-                <input type="text" name="marque" placeholder="Marque" required>
-                <input type="text" name="modele" placeholder="Modèle" required>
+                <input id="00N68000003PFnT" maxlength="100" name="00N68000003PFnT" size="20" type="text" placeholder="Marque" required>
+                <input id="00N68000003PFnY" maxlength="100" name="00N68000003PFnY" size="20" type="text" placeholder="Modèle" required>
                 <input type="text" name="kilometrage" placeholder="Kilométrage" required>
-                <input type="text" name="immatriculation" placeholder="Immatriculation" required>
+                <input id="00N68000003PFnO" name="00N68000003PFnO" size="20" type="text" placeholder="Kilométrage" required>
+                <input id="00N68000003PFnn" maxlength="20" name="00N68000003PFnn" size="20" type="text" placeholder="Immatriculation" required>
               </div>
               <div class="form-group">
-                <input type="text" name="nom" placeholder="Nom" required>
-                <input type="text" name="prenom" placeholder="Prénom" required>
-                <input type="text" name="telephone" placeholder="Téléphone" required>
-                <input type="text" name="ville" placeholder="Ville" required>
-                <input type="email" name="email" placeholder="Email" autocomplete="email" class="fullwidth" required>
+                <input id="last_name" maxlength="80" name="last_name" size="20" type="text" placeholder="Nom" required>
+                <input id="first_name" maxlength="40" name="first_name" size="20" type="text" placeholder="Prénom" required>
+                <input id="phone" maxlength="40" name="phone" size="20" type="text" placeholder="Téléphone" required>
+                <input id="city" maxlength="40" name="city" size="20" type="text" placeholder="Ville" required>
+                <input id="email" maxlength="80" name="email" size="20" type="email" placeholder="Email" autocomplete="email" class="fullwidth" required>
               </div>
               <input type="submit" value="Vendre ma vieille voiture" class="button button-secondary">
             </form>
@@ -213,12 +225,15 @@
         <p>Notre équipe est à votre disposition pour répondre à vos besoins et vous guider tout au long de votre démarche.</p>
         <p class="feature-text-color">Nous sommes là pour <strong class="with-secondary-underline">vous accompagner !</strong></p>
         <article class="contact-form">
-          <form action="">
+          <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D680000029HFM" method="POST">
+            <input id="00NTG000000IZSL" name="00NTG000000IZSL" type="hidden" value="1">
+            <input id="00NTG000000IZNV" name="00NTG000000IZNV" type="hidden" value="1">
+
             <div class="form-group">
-              <input type="text" name="nom" placeholder="Nom*" required>
-              <input type="text" name="prenom" placeholder="Prénom*" required>
-              <input type="text" name="telephone" placeholder="Téléphone*" required>
-              <input type="email" name="email" placeholder="Adresse email*" autocomplete="email" required>
+              <input id="last_name" maxlength="80" name="last_name" size="20" type="text" placeholder="Nom*" required>
+              <input id="first_name" maxlength="40" name="first_name" size="20" type="text" placeholder="Prénom*" required>
+              <input id="phone" maxlength="40" name="phone" size="20" type="text" placeholder="Téléphone*" required>
+              <input id="email" maxlength="80" name="email" size="20" type="email" placeholder="Adresse email*" autocomplete="email" required>
             </div>
             <div class="conditions">
               <p>Les champs marqués d’un * sont obligatoires.</p>
