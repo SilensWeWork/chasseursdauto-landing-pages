@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+  <title>Vente de véhicule - Chasseurs d'autos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style.css">
+  <script src="./assets/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+        <img src="./assets/images/chasseurs-dautos-logo-couleur-blanc.png" alt="Chasseurs d'autos" class="logo">
+        <nav>
+          <ul>
+            <li><a href="#recherche">Recherche</a></li>
+            <li><a href="#fonctionnement">Fonctionnement</a></li>
+            <li><a href="#qui-sommes-nous">Qui sommes-nous ?</a></li>
+            <li><a href="#catalogue">Catalogue</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero hero-vente">
+      <div class="container row">
+        <div class="hero-text">
+          <p>Votre voiture a perdu son mojo*&nbsp;?</p>
+          <p>On vous garantit <strong>plus de style</strong>&nbsp;!</p>
+        </div>
+      </div>
+      <p class="explain">* énergie ou charge irrésistible</p>
+    </section>
+    <section class="estimation">
+      <div class="container row row-formulaire">
+        <div class="column">
+          <h1>Changez de voiture sans tracas avec <strong class="with-primary-underline">Chasseurs d'autos</strong>&nbsp;:</h1>
+          <p>le spécialiste pour obtenir <strong>le meilleur prix</strong> rapidement et facilement.</p>
+        </div>
+        <div class="column">
+          <article class="estimation-form" id="recherche">
+            <h2>Partez à la quête du véhicule parfait&nbsp;:</h2>
+            <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D680000029HFM" method="POST">
+              <input type=hidden name="oid" value="00D680000029HFM">
+              <input type=hidden name="retURL" value="https://vente.chasseursdautos.com/">
+              <input id="00NTG000000IZNV" name="00NTG000000IZNV" type="hidden" value="1">
+              <input id="00NTG000000IZSL" name="00NTG000000IZSL" type="hidden" value="1">
+
+              <!-- field debug -->
+              <input type="hidden" name="debug" value=1>
+              <input type="hidden" name="debugEmail" value="benjamin@alena-dx.com">
+              <!-- end field debug -->
+
+              <!-- UTM -->
+              <input  id="00N68000003PFo7" maxlength="255" name="00N68000003PFo7" size="20" type="hidden">
+              <input  id="00N68000003PFoC" maxlength="255" name="00N68000003PFoC" size="20" type="hidden">
+              <input  id="00N68000003PFoH" maxlength="255" name="00N68000003PFoH" size="20" type="hidden">
+              <input  id="00N68000003PFoM" maxlength="255" name="00N68000003PFoM" size="20" type="hidden">
+              <input  id="00N68000003PFoR" maxlength="255" name="00N68000003PFoR" size="20" type="hidden">
+              <!--END UTM -->
+
+              <div class="form-group">
+                <input id="00N68000003PFnT" maxlength="100" name="00N68000003PFnT" size="20" type="text" placeholder="Marque" required>
+                <input id="00N68000003PFnY" maxlength="100" name="00N68000003PFnY" size="20" type="text" placeholder="Modèle" required>
+                <input id="00N68000003PFnO" name="00N68000003PFnO" size="20" type="text" placeholder="Kilométrage max" required>
+                <input id="00N68000003PFnn" maxlength="20" name="00N68000003PFnn" size="20" type="text" placeholder="Prix max" required>
+              </div>
+              <div class="form-group">
+                <input id="last_name" maxlength="80" name="last_name" size="20" type="text" placeholder="Nom" required>
+                <input id="first_name" maxlength="40" name="first_name" size="20" type="text" placeholder="Prénom" required>
+                <input id="phone" maxlength="40" name="phone" size="20" type="text" placeholder="Téléphone" required>
+                <input id="city" maxlength="40" name="city" size="20" type="text" placeholder="Ville" required>
+                <input id="email" maxlength="80" name="email" size="20" type="email" placeholder="Email" autocomplete="email" class="fullwidth" required>
+              </div>
+              <input type="submit" value="Trouver mon nouveau bolide" class="button button-secondary">
+            </form>
+          </article>
+        </div>
+      </div>
+
+      <div class="container processus" id="fonctionnement">
+        <h2>Un processus simple et rapide</h2>
+        <div class="schema-processus">
+          <div class="schema-step schema-step-1">
+            <img src="./assets/icons/chasseurs-dautos-icon-step-1.png" alt="">
+            <div class="schema-step-content">
+              <img src="./assets/icons/icon-step-1.svg" alt="Étape 1">
+              <p><strong>Remplir<br> le formulaire<br> de contact</strong></p>
+            </div>
+          </div>
+          <div class="schema-step">
+            <img src="./assets/icons/chasseurs-dautos-icon-step-2.png" alt="">
+            <div class="schema-step-content">
+              <img src="./assets/icons/icon-step-2.svg" alt="Étape 2">
+              <p>Un expert<br> Chasseurs d’Autos<br> me contacte</p>
+            </div>
+          </div>
+          <div class="schema-step">
+            <img src="./assets/icons/chasseurs-dautos-icon-step-3.png" alt="">
+            <div class="schema-step-content">
+              <img src="./assets/icons/icon-step-3.svg" alt="Étape 3">
+              <p>Je transmets<br> les éléments<br> complémentaires</p>
+            </div>
+          </div>
+          <div class="schema-step">
+            <img src="./assets/icons/chasseurs-dautos-vente-icon-step-4.png" alt="">
+            <div class="schema-step-content">
+              <img src="./assets/icons/icon-step-4.svg" alt="Étape 4">
+              <p>L’expert Chasseurs<br> d’Autos recherche<br> l’auto de mes rêves</p>
+            </div>
+          </div>
+          <div class="schema-step schema-step-5">
+            <img src="./assets/icons/chasseurs-dautos-vente-icon-step-5.png" alt="">
+            <div class="schema-step-content">
+              <img src="./assets/icons/icon-step-5.svg" alt="Étape 5">
+              <p>Je reçois une liste<br> de véhicules selon<br> mes critères</p>
+            </div>
+          </div>
+        </div>
+        <a href="#recherche" class="button">Découvrir ma voiture idéale</a>
+      </div>
+
+      <div class="container row row-about" id="qui-sommes-nous">
+        <div class="column">
+          <p class="feature-text">
+            <strong>Chasseurs d’Autos</strong> est un réseau d’indépendants en intermédiation de <strong>vente de véhicules</strong> adossé à des professionnels de l’automobile.
+          </p>
+          <p>
+            Nous accompagnons les particuliers et entreprises dans la vente de leur véhicule via un mandat de vente ou un rachat cash immédiat.
+          </p>
+            <a href="#" class="button button-secondary">En savoir plus</a>
+        </div>
+        <div class="column">
+          <ul>
+            <li>Accompagnement personnalisé</li>
+            <li>Essai de véhicule</li>
+            <li>Solutions de financement</li>
+            <li>Sécurisation du paiement</li>
+            <li>Véhicule garanti 6 mois min.</li>
+          </ul>
+          <p class="feature-text-color">Nous nous occupons<br> <strong class="with-secondary-underline">de tout, avec soin !</strong></p>
+        </div>
+      </div>
+    </section>
+    <section class="reprises" id="catalogue">
+      <div class="container">
+        <h2>Votre nouvelle voiture,<br> <strong>moins chère !</strong></h2>
+        <p>Découvrez une sélection de voitures disponibles dans notre catalogue complet, avec des modèles variés pour tous les besoins et budgets.</p>
+        <div class="catalog">
+          <div class="card">
+            <img src="./assets/images/chasseurs-dautos-annonce-1.png" alt="">
+            <div class="card-content">
+              <h3>Volkswagen Golf Sportsvan</h3>
+              <p class="card-description">Golf Sportsvan 1.6 TDI 110 FAP BlueMotion Technology Trendline DSG7</p>
+              <div class="card-prices">
+                <p class="price">12 690€</p>
+                <p class="price-per-month">360€/mois</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/images/chasseurs-dautos-annonce-2.jpg" alt="">
+            <div class="card-content">
+              <h3>Mercedes Benz GLA</h3>
+              <p class="card-description">GLA 220 d 8G-DCT 4Matic AMG Line</p>
+              <div class="card-prices">
+                <p class="price">39 900€</p>
+                <p class="price-per-month">599€/mois</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/images/chasseurs-dautos-annonce-3.jpg" alt="">
+            <div class="card-content">
+              <h3>Volkswagen Golf Sportsvan</h3>
+              <p class="card-description">Golf Sportsvan 1.6 TDI 110 FAP BlueMotion Technology Trendline DSG7</p>
+              <div class="card-prices">
+                <p class="price">20 390€</p>
+                <p class="price-per-month">460€/mois</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/images/chasseurs-dautos-annonce-1.png" alt="">
+            <div class="card-content">
+              <h3>Annonce 4</h3>
+              <p class="card-description">Golf Sportsvan 1.6 TDI 110 FAP BlueMotion Technology Trendline DSG7</p>
+              <div class="card-prices">
+                <p class="price">12 690€</p>
+                <p class="price-per-month">360€/mois</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/images/chasseurs-dautos-annonce-2.jpg" alt="">
+            <div class="card-content">
+              <h3>Annonce 5</h3>
+              <p class="card-description">GLA 220 d 8G-DCT 4Matic AMG Line</p>
+              <div class="card-prices">
+                <p class="price">39 900€</p>
+                <p class="price-per-month">599€/mois</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/images/chasseurs-dautos-annonce-3.jpg" alt="">
+            <div class="card-content">
+              <h3>Annonce 6</h3>
+              <p class="card-description">Golf Sportsvan 1.6 TDI 110 FAP BlueMotion Technology Trendline DSG7</p>
+              <div class="card-prices">
+                <p class="price">20 390€</p>
+                <p class="price-per-month">460€/mois</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="./assets/icons/icon-arrow-left.svg" alt="Défiler à gauche les annonces" class="scroll-left scroll-arrow">
+        <img src="./assets/icons/icon-arrow-right.svg" alt="Défiler à droite les annonces" class="scroll-right scroll-arrow">
+        <a href="#" class="button">Découvrir le catalogue complet</a>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="contact-image-container">
+        <img src="./assets/images/chasseurs-dautos-contact-viking.png" alt="">
+      </div>
+      <div class="contact-form-container">
+        <h2>Et si on discutait<br> de votre projet ?</h2>
+        <p>Notre équipe est à votre disposition pour répondre à vos besoins et vous guider tout au long de votre démarche.</p>
+        <p class="feature-text-color">Nous sommes là pour <strong class="with-secondary-underline">vous accompagner !</strong></p>
+        <article class="contact-form">
+          <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D680000029HFM" method="POST">
+            <!-- debug fields -->
+            <input type="hidden" name="debug" value=1>  
+            <input type="hidden" name="debugEmail" value="benjamin@alena-dx.com">
+            <!-- end debug fields -->
+
+            <input id="00NTG000000IZSL" name="00NTG000000IZSL" type="hidden" value="1">
+            <input id="00NTG000000IZNV" name="00NTG000000IZNV" type="hidden" value="1">
+
+            <!-- UTM -->
+            <input  id="00N68000003PFo7" maxlength="255" name="00N68000003PFo7" size="20" type="hidden">
+            <input  id="00N68000003PFoC" maxlength="255" name="00N68000003PFoC" size="20" type="hidden">
+            <input  id="00N68000003PFoH" maxlength="255" name="00N68000003PFoH" size="20" type="hidden">
+            <input  id="00N68000003PFoM" maxlength="255" name="00N68000003PFoM" size="20" type="hidden">
+            <input  id="00N68000003PFoR" maxlength="255" name="00N68000003PFoR" size="20" type="hidden">
+            <!--END UTM -->
+
+            <div class="form-group">
+              <input id="last_name" maxlength="80" name="last_name" size="20" type="text" placeholder="Nom*" required>
+              <input id="first_name" maxlength="40" name="first_name" size="20" type="text" placeholder="Prénom*" required>
+              <input id="phone" maxlength="40" name="phone" size="20" type="text" placeholder="Téléphone*" required>
+              <input id="email" maxlength="80" name="email" size="20" type="email" placeholder="Adresse email*" autocomplete="email" required>
+            </div>
+            <div class="conditions">
+              <p>Les champs marqués d’un * sont obligatoires.</p>
+              <label for="contact-conditions">
+                <input type="checkbox" name="conditions" id="contact-conditions">
+                J'accepte les conditions générales et la politique de confidentialité.
+              </label>
+            </div>
+            <input type="submit" value="Échanger avec un conseiller" class="button button-secondary">
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <img src="./assets/images/chasseurs-dautos-logo-blanc.png" alt="Chasseurs d'autos" class="logo">
+
+      <nav>
+        <ul>
+          <li><a href="https://chasseursdautos.com/" target="_blank">Site internet</a></li>
+          <li><a href="https://www.facebook.com/people/Chasseurs-dAutos/61551448784446/" target="_blank">Facebook</a></li>
+          <li><a href="https://chasseursdautos.com/mentions-legales" target="_blank">Mentions légales</a></li>
+          <li><a href="https://chasseursdautos.com/conditions-generales-vente" target="_blank">Conditions générales</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

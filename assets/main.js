@@ -1,4 +1,30 @@
 document.addEventListener('DOMContentLoaded', function() {
+    
+    // Menu scroll smooth
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+		anchor.addEventListener('click', function(e) {
+			e.preventDefault();
+
+			const headerHeight = document.querySelector('header').offsetHeight;
+
+			const targetId = this.getAttribute('href').substring(1);
+			const targetElement = document.getElementById(targetId);
+
+			if (targetElement) {
+				const targetPosition = (targetElement.getBoundingClientRect().top + window.scrollY) - headerHeight;
+
+				window.scrollTo({
+					top: targetPosition,
+					behavior: 'smooth'
+				});
+			}
+		});
+	});
+
+
+    // Catalogue
+
     const catalog = document.querySelector('.catalog');
     const cards = document.querySelectorAll('.card');
     const cardWidth = document.querySelector('.card').offsetWidth + 30; // Largeur d'une carte + gap
