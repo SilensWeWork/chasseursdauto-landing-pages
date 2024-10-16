@@ -47,14 +47,17 @@
             <h2>Partez à la quête du véhicule parfait&nbsp;:</h2>
             <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D680000029HFM" method="POST">
               <input type=hidden name="oid" value="00D680000029HFM">
-              <input type=hidden name="retURL" value="https://vente.chasseursdautos.com/">
-              <input id="00NTG000000IZNV" name="00NTG000000IZNV" type="hidden" value="1">
-              <input id="00NTG000000IZSL" name="00NTG000000IZSL" type="hidden" value="1">
+              <input type=hidden name="retURL" value="https://recherche.chasseursdautos.com/">
 
               <!-- field debug -->
               <input type="hidden" name="debug" value=1>
               <input type="hidden" name="debugEmail" value="benjamin@alena-dx.com">
               <!-- end field debug -->
+
+              <!-- LP SEA -->
+              <input id="00NTG000000IZSL" name="00NTG000000IZSL" type="hidden" value="1">
+              <!-- Recherche / Achat -->
+              <input id="00NTG000000IZP7" name="00NTG000000IZP7" type="hidden" value="1">
 
               <!-- UTM -->
               <input  id="00N68000003PFo7" maxlength="255" name="00N68000003PFo7" size="20" type="hidden">
@@ -68,7 +71,7 @@
                 <input id="00N68000003PFnT" maxlength="100" name="00N68000003PFnT" size="20" type="text" placeholder="Marque" required>
                 <input id="00N68000003PFnY" maxlength="100" name="00N68000003PFnY" size="20" type="text" placeholder="Modèle" required>
                 <input id="00N68000003PFnO" name="00N68000003PFnO" size="20" type="text" placeholder="Kilométrage max" required>
-                <input id="00N68000003PFnn" maxlength="20" name="00N68000003PFnn" size="20" type="text" placeholder="Prix max" required>
+                <input id="00NTG000000IZaP" maxlength="20" name="00NTG000000IZaP" size="20" type="text" placeholder="Prix max" required>
               </div>
               <div class="form-group">
                 <input id="last_name" maxlength="80" name="last_name" size="20" type="text" placeholder="Nom" required>
@@ -234,13 +237,18 @@
         <p class="feature-text-color">Nous sommes là pour <strong class="with-secondary-underline">vous accompagner !</strong></p>
         <article class="contact-form">
           <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D680000029HFM" method="POST">
+            <input type=hidden name="oid" value="00D680000029HFM">
+            <input type=hidden name="retURL" value="https://recherche.chasseursdautos.com">
+
             <!-- debug fields -->
             <input type="hidden" name="debug" value=1>  
             <input type="hidden" name="debugEmail" value="benjamin@alena-dx.com">
             <!-- end debug fields -->
 
+            <!-- LP SEA -->
             <input id="00NTG000000IZSL" name="00NTG000000IZSL" type="hidden" value="1">
-            <input id="00NTG000000IZNV" name="00NTG000000IZNV" type="hidden" value="1">
+            <!-- Recherche / Achat -->
+            <input id="00NTG000000IZP7" name="00NTG000000IZP7" type="hidden" value="1">
 
             <!-- UTM -->
             <input  id="00N68000003PFo7" maxlength="255" name="00N68000003PFo7" size="20" type="hidden">
