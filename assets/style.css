@@ -321,6 +321,7 @@ footer ul li a {
 
 .estimation .processus h2 {
   text-align: center;
+  font-weight: 600;
 }
 
 .estimation .schema-processus {
@@ -338,19 +339,97 @@ footer ul li a {
 
 .estimation .schema-step img {
   max-width: 120px;
-  margin: -22px auto 0;
+  margin: -22px auto 20px;
   z-index: 1;
   position: relative;
 }
 
 .estimation .schema-step-content {
+  position: relative;
   width: 100%;
   border-top: 2px solid rgba(129, 148, 217, 0.20);
-  position: relative;
 }
 
-.estimation .schema-step-1 .schema-step-content {
-  border-top: 3px solid #8194D9;
+.estimation .schema-step-content::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  height: 3px;
+  background: #8194D9;
+  transition: all 0.2s linear;
+  animation: progress1 12s linear infinite;
+  width: 0;
+}
+
+.estimation .schema-step-2 .schema-step-content::after {
+  animation: progress2 12s linear infinite;
+}
+
+.estimation .schema-step-3 .schema-step-content::after {
+  animation: progress3 12s linear infinite;
+}
+
+.estimation .schema-step-4 .schema-step-content::after {
+  animation: progress4 12s linear infinite;
+}
+
+.estimation .schema-step-5 .schema-step-content::after {
+  display: none;
+}
+
+@keyframes progress1 {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes progress2 {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes progress3 {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  75% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes progress4 {
+  0% {
+    width: 0;
+  }
+  75% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 .estimation .schema-step-content p {
@@ -426,7 +505,8 @@ footer ul li a {
 
 .estimation .row-about p.feature-text-color {
   margin: 0 auto;
-  text-align: center;
+  width: fit-content;
+  text-align: left;
   font-size: 22px;
 }
 
@@ -563,6 +643,10 @@ footer ul li a {
   flex-direction: column;
   gap: 25px;
   max-width: 665px;
+}
+
+.contact .contact-form-container .contact-form {
+  margin-top: 25px;
 }
 
 /* Forms */
